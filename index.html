@@ -19,7 +19,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <div class="main-card">
 
 <header>
-<h2 class="logo"> STACKLY</h2>
+<!-- <h2 class="logo"> STACKLY</h2> -->
+<div class="logo">
+  <img src="logo.webp" width="45px" height="45px" alt="STACKLY Logo" class="brand-logo">
+  <span class="brand-name">STACKLY</span>
+</div>
 
 <nav id="menu">
 <a href="404.html">Introduction</a>
@@ -368,10 +372,10 @@ design, and technology into powerful solutions.
 <a href="404.html"><button class="cta-btn">Start a Project</button></a>
 
 <div class="social-icons">
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-linkedin-in"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-facebook-f"></i>
+<a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+<a href="404.html"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+<a href="404.html"><i class="fa-brands fa-facebook-f"></i></a>
 </div>
 
 <p class="copy">© 2026 Stackly — All Rights Reserved.</p>
@@ -444,6 +448,32 @@ color:#5b5bff;
 }
 
 @media(max-width:768px){
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.brand-logo{
+  width:40px;
+  height:auto;
+}
+
+.brand-name{
+  font-size:24px;
+  font-weight:600;
+  color:#5b5bff;
+  letter-spacing:1px;
+}
+
+@media(max-width:768px){
+  .brand-logo{
+    width:32px;
+  }
+  .brand-name{
+    font-size:20px;
+  }
+}
 
 nav{
 display:none;
@@ -511,11 +541,11 @@ border:none;
 border-radius:6px;
 }
 
-.work{
-padding:10px 20px;
+.work{padding:10px 20px;
 border:2px solid #5b5bff;
 background:transparent;
 border-radius:6px;
+
 }
 
 /* RIGHT IMAGE */
