@@ -1,0 +1,102 @@
+<section class="error-section">
+  <div class="error-container">
+
+    <h1 class="error-code">404</h1>
+    <h2 class="error-text">Oops! Page Not Found</h2>
+    <p class="error-desc">
+      The page you're looking for doesn't exist or has been moved.
+    </p>
+
+    <a href="index.html" class="back-btn">Go Back Home</a>
+
+  </div>
+</section>
+<style>/* ===== Pastel 404 Page ===== */
+
+.error-section{
+  height:100vh;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#fdfbfb,#ebedee,#f3e7ff,#e3f2fd);
+  overflow:hidden;
+}
+
+.error-container{
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(20px);
+  border-radius:20px;
+  padding:50px 40px;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,0.05);
+  animation:fadeUp 1s ease;
+}
+
+.error-code{
+  font-size:120px;
+  font-weight:800;
+  background:linear-gradient(45deg,#c3bef0,#a1c4fd,#fbc2eb);
+  -webkit-background-clip:text;
+  color:transparent;
+  animation:float 3s infinite ease-in-out;
+}
+
+.error-text{
+  font-size:28px;
+  color:#555;
+  margin:10px 0;
+}
+
+.error-desc{
+  font-size:16px;
+  color:#777;
+  margin-bottom:25px;
+}
+
+.back-btn{
+  display:inline-block;
+  padding:12px 25px;
+  border-radius:50px;
+  background:linear-gradient(45deg,#a1c4fd,#fbc2eb);
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Animation */
+
+@keyframes float{
+  0%,100%{transform:translateY(0px);}
+  50%{transform:translateY(-10px);}
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+  .error-code{
+    font-size:80px;
+  }
+
+  .error-text{
+    font-size:22px;
+  }
+
+  .error-container{
+    margin:0 20px;
+    padding:30px;
+  }
+
+}
+</style>
